@@ -4,10 +4,13 @@
 }
 
 .main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 #gridContainer {
     height: 500px;
     width: 500px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.32);
 }
