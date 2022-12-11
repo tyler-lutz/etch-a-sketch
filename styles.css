@@ -4,15 +4,35 @@
     font-family: sans-serif;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.header {
+    padding: 20px 0;
 }
 
-#gridContainer {
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.settings {
+    width: 200px;
+}
+
+.grid {
     display: grid;
     height: 500px;
     width: 500px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.32);
+}
+
+.grid-element {
+    user-select: none;
 }
