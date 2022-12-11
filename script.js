@@ -1,9 +1,21 @@
+const sizeValue = document.getElementById('sizeValue');
+const sizeSlider = document.getElementById('sizeSlider');
 const gridContainer = document.getElementById('gridContainer');
 
+sizeSlider.onchange = (e) => updateSize(e.target.value);
+
+function updateSize(value) {
+    sizeValue.textContent = `${value} x ${value}`;
+    clearGrid();
+    createGrid(value);
+}
+
+function clearGrid() {
+    gridContainer.innerHTML = ''
+}
+
 function changeColor(e) {
-    console.log(e);
     e.target.style.backgroundColor = `#121212`;
-    console.log('test')
 }
 
 function createGrid(size) {
